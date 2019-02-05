@@ -7,12 +7,12 @@ class MYPROJECT_API AMyCharacter : public ACharacter
 {
 	GENERATED_BODY()
 public:
-	AMyCharacter();
+	explicit AMyCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 private:
-    void MoveForward(float Value);
-    void MoveRight(float Value);
+	void MoveForward(float Value);
+	void MoveRight(float Value);
 	void MoveCore(EAxis::Type InAxis, float InValue);
 	void StartJump();
 	void StopJump();

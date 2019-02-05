@@ -1,8 +1,7 @@
 #include "MyCharacter.h"
 #include "Engine.h"
-AMyCharacter::AMyCharacter()
-{
-}
+AMyCharacter::AMyCharacter(const FObjectInitializer& ObjectInitializer)
+	Super(ObjectInitializer) { }
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
