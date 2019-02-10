@@ -9,7 +9,7 @@ class MYPROJECT_API AMyCharacter : public ACharacter
 public:
 	explicit AMyCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 protected:
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(class UInputComponent* InInputComponent) override;
 private:
 	void MoveForward(float Value);
 	void MoveRight(float Value);
