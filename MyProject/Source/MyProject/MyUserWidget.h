@@ -18,7 +18,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidgetAnim))
 	UWidgetAnimation* Start = nullptr;
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
-	UButton* Button_0 = nullptr;
+	UButton* Button = nullptr;
 	UFUNCTION()
 	void MyClick();
 };

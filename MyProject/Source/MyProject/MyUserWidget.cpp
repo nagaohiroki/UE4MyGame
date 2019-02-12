@@ -12,14 +12,11 @@ void UMyUserWidget::NativeConstruct()
 	{
 		Text->SetText(FText::FromString(TEXT("aaa")));
 	}
-	if(Start)
+	if(Button)
 	{
-		PlayAnimation(Start, 0.0f, 10);
+		Button->OnClicked.AddDynamic(this, &UMyUserWidget::MyClick);
 	}
-	if(Button_0)
-	{
-		Button_0->OnClicked.AddDynamic(this, &UMyUserWidget::MyClick);
-	}
+	PlayAnimation(Start, 0.0f, 10);
 }
 
 void UMyUserWidget::MyClick()
