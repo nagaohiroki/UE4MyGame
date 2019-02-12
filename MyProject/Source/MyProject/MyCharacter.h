@@ -16,4 +16,5 @@ private:
 	void MoveCore(EAxis::Type InAxis, float InValue);
 	void StartJump();
 	void StopJump();
+	void Fire();
 };

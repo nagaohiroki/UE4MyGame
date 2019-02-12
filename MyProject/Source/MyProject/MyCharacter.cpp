@@ -16,6 +16,7 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* InInputComponent)
 	InInputComponent->BindAxis(TEXT("LookUp"), this, &ACharacter::AddControllerPitchInput);
 	InInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &AMyCharacter::StartJump);
 	InInputComponent->BindAction(TEXT("Jump"), IE_Released, this, &AMyCharacter::StopJump);
+	InInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &AMyCharacter::Fire);
 }
 void AMyCharacter::MoveForward(float InValue)
 {
@@ -39,4 +40,8 @@ void AMyCharacter::StartJump()
 void AMyCharacter::StopJump()
 {
 	bPressedJump = false;
+}
+
+void AMyCharacter::Fire()
+{
 }
