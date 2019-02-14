@@ -45,3 +45,12 @@ void AMyCharacter::StopJump()
 void AMyCharacter::Fire()
 {
 }
+void AMyCharacter::Save()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, TEXT("Save"));
+}
+void AMyCharacter::Load()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, TEXT("Save"));
+}
+

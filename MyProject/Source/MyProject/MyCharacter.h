@@ -8,6 +8,10 @@ class MYPROJECT_API AMyCharacter : public ACharacter
 	GENERATED_BODY()
 public:
 	explicit AMyCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+	UFUNCTION(CallInEditor)
+	void Save();
+	UFUNCTION(CallInEditor)
+	void Load();
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InInputComponent) override;
 private:
