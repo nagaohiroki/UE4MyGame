@@ -49,3 +49,17 @@ void UMyUserWidget::Load()
 	}
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, TEXT("Load") + FString::FromInt(LoadGameInstance->Savedata.Index));
 }
+
+void UMyUserWidget::ChangeImage()
+{
+	if(!Image_0)
+	{
+		return;
+	}
+	Index = 1 - Index;
+	if(!SoftTextures.IsValidIndex(Index))
+	{
+		return;
+	}
+	Image_0->SetBrushFromSoftTexture(SoftTextures[Index]);
+}
