@@ -6,6 +6,6 @@ void UMyUserWidgetTest::NativeTick(const FGeometry& MyGeometry, float InDeltaTim
 	Super::NativeTick(MyGeometry, InDeltaTime);
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(1, 0.0f, FColor::Red, TEXT(""));
+		GEngine->AddOnScreenDebugMessage(1, 0.0f, FColor::Red, TEXT("a"));
 	}
 }

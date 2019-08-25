@@ -82,6 +82,5 @@ CMakeLists.txt
 compile_commands.json
 rules.ninja
 tags
-update_compile_commands.bat
-update_ctags.bat
-update_project.bat
+.ninja_deps
+.ninja_log
